@@ -31,3 +31,4 @@ model Orden {
   total Float
   pedido Json 
 }
+//Coneccion a la base de datos
