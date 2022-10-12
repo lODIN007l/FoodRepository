@@ -14,7 +14,7 @@ export default function Home({categorias}) {
 }
 
 
-
+//1 manera 
 export const getServerSideProps = async () => {
   const prisma = new PrismaClient()
   const categorias = await prisma.categoria.findMany();
