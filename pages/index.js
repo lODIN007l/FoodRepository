@@ -1,22 +1,18 @@
-import Head from 'next/head'
-import Image from 'next/image'
+import Head from "next/head";
+import Image from "next/image";
 // import {PrismaClient} from '@prisma/client'
-import layout from './layout/layout'
+import Layout from "../layout/Layout";
 
-
-export default function Home({categorias}) {
-  console.log(categorias)
+export default function Home({ categorias }) {
+  // console.log(categorias);
   return (
-    <layout >
-      <h1>Next.js + Tailwind CSS</h1>
-       
-      
-    </layout>
-  )
+    <Layout pagina={"inicio"}>
+      <h1>Inicio</h1>
+    </Layout>
+  );
 }
 
-
-//1 manera 
+//1 manera
 // export const getServerSideProps = async () => {
 //   const prisma = new PrismaClient()
 //   const categorias = await prisma.categoria.findMany();
