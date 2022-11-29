@@ -14,7 +14,9 @@ const QuiskoContext = createContext();
 
 
 
-  return <QuiskoContext.Provider value={{}}>{children}</QuiskoContext.Provider>;
+  return <QuiskoContext.Provider value={{categorias}}>{children}</QuiskoContext.Provider>;
 
 }
-export{QuiskoContext,QuiskoProvider}
+
+export default QuiskoContext;
+export{QuiskoProvider}

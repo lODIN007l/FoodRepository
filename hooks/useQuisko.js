@@ -1,11 +1,9 @@
-import { useContext,useEffect,useState } from "react";
-import QuiskoContext from "../context/QuiskoContext";
+import { useContext } from "react";
+import QuiskoContext from "../context/QuiskoProvider";
 
-const QuiskoContext= createContext();
+const useQuisko=()=>{
+    return useContext(QuiskoContext);
 
-const QuiskoProvider = ({children}) => {
-    return (
-        <QuiskoContext.Provider value={{}}>
-            {children} </QuiskoContext.Provider>
-    )
-}
+};
+
+export default useQuisko;
