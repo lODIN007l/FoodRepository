@@ -3,7 +3,8 @@ import Image from "next/image";
 // import {PrismaClient} from '@prisma/client'
 import Layout from "../layout/Layout";
 
-export default function Home({ categorias }) {
+// export default function Home({ categorias }) {
+export default function Home({  }) { 
   // console.log(categorias);
   return (
     <Layout pagina={"inicio"}>
@@ -12,7 +13,7 @@ export default function Home({ categorias }) {
   );
 }
 
-//1 manera
+// 1 manera
 // export const getServerSideProps = async () => {
 //   const prisma = new PrismaClient()
 //   const categorias = await prisma.categoria.findMany();
