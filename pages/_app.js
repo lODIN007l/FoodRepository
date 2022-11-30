@@ -1,18 +1,12 @@
-import '../styles/globals.css'
-import {QuiskoProvider} from "../context/QuiskoProvider"
-
+import "../styles/globals.css";
+import { QuioscoProvider } from "../context/QuioscoProvider";
 
 function MyApp({ Component, pageProps }) {
-  
   return (
-  <QuiskoProvider> 
-    <Component {...pageProps} /> 
-    </QuiskoProvider>)
-  
-
-
-
-
+    <QuioscoProvider>
+      <Component {...pageProps} />
+    </QuioscoProvider>
+  );
 }
 
-export default MyApp
+export default MyApp;

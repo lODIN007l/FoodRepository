@@ -3,7 +3,7 @@ CREATE TABLE "Producto" (
     "id" SERIAL NOT NULL,
     "nombre" TEXT NOT NULL,
     "precio" DOUBLE PRECISION NOT NULL,
-    "imagen" TEXT,
+    "imagen" TEXT NOT NULL,
     "categoriaId" INTEGER NOT NULL,
 
     CONSTRAINT "Producto_pkey" PRIMARY KEY ("id")
@@ -16,6 +16,17 @@ CREATE TABLE "Categoria" (
     "icono" TEXT NOT NULL,
 
     CONSTRAINT "Categoria_pkey" PRIMARY KEY ("id")
+);
+
+-- CreateTable
+CREATE TABLE "Orden" (
+    "id" SERIAL NOT NULL,
+    "nombre" TEXT NOT NULL,
+    "fecha" TEXT NOT NULL,
+    "total" DOUBLE PRECISION NOT NULL,
+    "pedido" JSONB NOT NULL,
+
+    CONSTRAINT "Orden_pkey" PRIMARY KEY ("id")
 );
 
 -- AddForeignKey
